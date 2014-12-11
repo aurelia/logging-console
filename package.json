@@ -1,6 +1,6 @@
 {
   "name": "aurelia-logging-console",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A console log appender for the Aurelia logging library.",
   "keywords": [
     "aurelia",
@@ -15,7 +15,7 @@
   "main": "dist/commonjs/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/aurelia/logging-console"
+    "url": "http://github.com/aurelia/logging-console"
   },
   "jspm": {
     "directories": {
