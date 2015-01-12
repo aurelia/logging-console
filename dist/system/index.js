@@ -1,7 +1,7 @@
 System.register([], function (_export) {
   "use strict";
 
-  var _toArray, ConsoleAppender;
+  var _toArray, _prototypeProperties, ConsoleAppender;
   return {
     setters: [],
     execute: function () {
@@ -9,48 +9,75 @@ System.register([], function (_export) {
         return Array.isArray(arr) ? arr : Array.from(arr);
       };
 
-      ConsoleAppender = function ConsoleAppender() {};
-
-      ConsoleAppender.prototype.debug = function (logger, message) {
-        var rest = [];
-
-        for (var _key = 2; _key < arguments.length; _key++) {
-          rest[_key - 2] = arguments[_key];
-        }
-
-        console.debug.apply(console, ["DEBUG [" + logger.id + "] " + message].concat(_toArray(rest)));
+      _prototypeProperties = function (child, staticProps, instanceProps) {
+        if (staticProps) Object.defineProperties(child, staticProps);
+        if (instanceProps) Object.defineProperties(child.prototype, instanceProps);
       };
 
-      ConsoleAppender.prototype.info = function (logger, message) {
-        var rest = [];
+      ConsoleAppender = (function () {
+        var ConsoleAppender = function ConsoleAppender() {};
 
-        for (var _key2 = 2; _key2 < arguments.length; _key2++) {
-          rest[_key2 - 2] = arguments[_key2];
-        }
+        _prototypeProperties(ConsoleAppender, null, {
+          debug: {
+            value: function (logger, message) {
+              var rest = [];
 
-        console.info.apply(console, ["INFO [" + logger.id + "] " + message].concat(_toArray(rest)));
-      };
+              for (var _key = 2; _key < arguments.length; _key++) {
+                rest[_key - 2] = arguments[_key];
+              }
 
-      ConsoleAppender.prototype.warn = function (logger, message) {
-        var rest = [];
+              console.debug.apply(console, ["DEBUG [" + logger.id + "] " + message].concat(_toArray(rest)));
+            },
+            writable: true,
+            enumerable: true,
+            configurable: true
+          },
+          info: {
+            value: function (logger, message) {
+              var rest = [];
 
-        for (var _key3 = 2; _key3 < arguments.length; _key3++) {
-          rest[_key3 - 2] = arguments[_key3];
-        }
+              for (var _key2 = 2; _key2 < arguments.length; _key2++) {
+                rest[_key2 - 2] = arguments[_key2];
+              }
 
-        console.warn.apply(console, ["WARN [" + logger.id + "] " + message].concat(_toArray(rest)));
-      };
+              console.info.apply(console, ["INFO [" + logger.id + "] " + message].concat(_toArray(rest)));
+            },
+            writable: true,
+            enumerable: true,
+            configurable: true
+          },
+          warn: {
+            value: function (logger, message) {
+              var rest = [];
 
-      ConsoleAppender.prototype.error = function (logger, message) {
-        var rest = [];
+              for (var _key3 = 2; _key3 < arguments.length; _key3++) {
+                rest[_key3 - 2] = arguments[_key3];
+              }
 
-        for (var _key4 = 2; _key4 < arguments.length; _key4++) {
-          rest[_key4 - 2] = arguments[_key4];
-        }
+              console.warn.apply(console, ["WARN [" + logger.id + "] " + message].concat(_toArray(rest)));
+            },
+            writable: true,
+            enumerable: true,
+            configurable: true
+          },
+          error: {
+            value: function (logger, message) {
+              var rest = [];
 
-        console.error.apply(console, ["ERROR [" + logger.id + "] " + message].concat(_toArray(rest)));
-      };
+              for (var _key4 = 2; _key4 < arguments.length; _key4++) {
+                rest[_key4 - 2] = arguments[_key4];
+              }
 
+              console.error.apply(console, ["ERROR [" + logger.id + "] " + message].concat(_toArray(rest)));
+            },
+            writable: true,
+            enumerable: true,
+            configurable: true
+          }
+        });
+
+        return ConsoleAppender;
+      })();
       _export("ConsoleAppender", ConsoleAppender);
     }
   };
