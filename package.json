@@ -18,11 +18,11 @@
     "url": "http://github.com/aurelia/logging-console"
   },
   "jspm": {
+    "main": "index",
+    "format": "register",
     "directories": {
-      "lib": "dist"
-    },
-    "main": "system/index",
-    "format": "register"
+      "lib": "dist/system"
+    }
   },
   "devDependencies": {
     "aurelia-tools": "^0.1.0",
