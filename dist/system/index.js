@@ -1,21 +1,19 @@
 System.register([], function (_export) {
-  "use strict";
+  var _prototypeProperties, _classCallCheck, ConsoleAppender;
 
-  var _toArray, _prototypeProperties, ConsoleAppender;
   return {
     setters: [],
     execute: function () {
-      _toArray = function (arr) {
-        return Array.isArray(arr) ? arr : Array.from(arr);
-      };
+      "use strict";
 
-      _prototypeProperties = function (child, staticProps, instanceProps) {
-        if (staticProps) Object.defineProperties(child, staticProps);
-        if (instanceProps) Object.defineProperties(child.prototype, instanceProps);
-      };
+      _prototypeProperties = function (child, staticProps, instanceProps) { if (staticProps) Object.defineProperties(child, staticProps); if (instanceProps) Object.defineProperties(child.prototype, instanceProps); };
 
-      ConsoleAppender = (function () {
-        function ConsoleAppender() {}
+      _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } };
+
+      ConsoleAppender = _export("ConsoleAppender", (function () {
+        function ConsoleAppender() {
+          _classCallCheck(this, ConsoleAppender);
+        }
 
         _prototypeProperties(ConsoleAppender, null, {
           debug: {
@@ -24,53 +22,48 @@ System.register([], function (_export) {
                 rest[_key - 2] = arguments[_key];
               }
 
-              console.debug.apply(console, ["DEBUG [" + logger.id + "] " + message].concat(_toArray(rest)));
+              console.debug.apply(console, ["DEBUG [" + logger.id + "] " + message].concat(rest));
             },
             writable: true,
-            enumerable: true,
             configurable: true
           },
           info: {
             value: function info(logger, message) {
-              for (var _len2 = arguments.length, rest = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-                rest[_key2 - 2] = arguments[_key2];
+              for (var _len = arguments.length, rest = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+                rest[_key - 2] = arguments[_key];
               }
 
-              console.info.apply(console, ["INFO [" + logger.id + "] " + message].concat(_toArray(rest)));
+              console.info.apply(console, ["INFO [" + logger.id + "] " + message].concat(rest));
             },
             writable: true,
-            enumerable: true,
             configurable: true
           },
           warn: {
             value: function warn(logger, message) {
-              for (var _len3 = arguments.length, rest = Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
-                rest[_key3 - 2] = arguments[_key3];
+              for (var _len = arguments.length, rest = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+                rest[_key - 2] = arguments[_key];
               }
 
-              console.warn.apply(console, ["WARN [" + logger.id + "] " + message].concat(_toArray(rest)));
+              console.warn.apply(console, ["WARN [" + logger.id + "] " + message].concat(rest));
             },
             writable: true,
-            enumerable: true,
             configurable: true
           },
           error: {
             value: function error(logger, message) {
-              for (var _len4 = arguments.length, rest = Array(_len4 > 2 ? _len4 - 2 : 0), _key4 = 2; _key4 < _len4; _key4++) {
-                rest[_key4 - 2] = arguments[_key4];
+              for (var _len = arguments.length, rest = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+                rest[_key - 2] = arguments[_key];
               }
 
-              console.error.apply(console, ["ERROR [" + logger.id + "] " + message].concat(_toArray(rest)));
+              console.error.apply(console, ["ERROR [" + logger.id + "] " + message].concat(rest));
             },
             writable: true,
-            enumerable: true,
             configurable: true
           }
         });
 
         return ConsoleAppender;
-      })();
-      _export("ConsoleAppender", ConsoleAppender);
+      })());
     }
   };
 });

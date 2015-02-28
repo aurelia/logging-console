@@ -1,3 +1,11 @@
+### 0.2.3 (2015-02-27)
+
+
+#### Bug Fixes
+
+* **build:** add missing bower bump ([51363b83](http://github.com/aurelia/logging-console/commit/51363b8319af785fbfa5e98015aa8ae2398b88fc))
+
+
 ### 0.2.2 (2015-01-22)
 
 * Updated compiler.
