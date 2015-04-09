@@ -1,3 +1,13 @@
+## 0.3.0 (2015-04-09)
+
+
+#### Bug Fixes
+
+* **all:**
+  * add polyfill for console in old browsers ([3d119f7f](http://github.com/aurelia/logging-console/commit/3d119f7f8664e273b7bfbfa728ba6e5a9edfb642))
+  * update compiler ([edf28d3e](http://github.com/aurelia/logging-console/commit/edf28d3e4eb7208e40080c4acd4298040b5162ec))
+
+
 ### 0.2.4 (2015-02-28)
 
 
