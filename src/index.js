@@ -19,6 +19,12 @@
 // targeted script loaders such as Browserify or Webpack where the only way to
 // get to the global object is via `window`.
 
+if (Function.prototype.bind && window.console && typeof console.log == "object"){
+  ["log","info","warn","error","assert","dir","clear","profile","profileEnd"].forEach(function (method) {
+    console[method] = this.bind(console[method], console);
+  }, Function.prototype.call);
+}
+
 export class ConsoleAppender {
   constructor(){}
 
