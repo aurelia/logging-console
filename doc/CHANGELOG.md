@@ -1,3 +1,11 @@
+## 0.4.0 (2015-04-30)
+
+
+#### Bug Fixes
+
+* **IE9:** fixes IE9 apply error ([c309be2f](http://github.com/aurelia/logging-console/commit/c309be2f9d2f59bf07e0a3c102138459d071c018))
+
+
 ## 0.3.0 (2015-04-09)
 
 

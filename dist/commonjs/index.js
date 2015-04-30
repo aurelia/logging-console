@@ -2,11 +2,7 @@
 
 var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } };
 
-var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
-
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
+exports.__esModule = true;
 
 (function (global) {
   'use strict';
@@ -21,48 +17,48 @@ Object.defineProperty(exports, '__esModule', {
   while (method = methods.pop()) if (!con[method]) con[method] = dummy;
 })(typeof window === 'undefined' ? undefined : window);
 
+if (Function.prototype.bind && window.console && typeof console.log == 'object') {
+  ['log', 'info', 'warn', 'error', 'assert', 'dir', 'clear', 'profile', 'profileEnd'].forEach(function (method) {
+    console[method] = this.bind(console[method], console);
+  }, Function.prototype.call);
+}
+
 var ConsoleAppender = (function () {
   function ConsoleAppender() {
     _classCallCheck(this, ConsoleAppender);
   }
 
-  _createClass(ConsoleAppender, [{
-    key: 'debug',
-    value: function debug(logger, message) {
-      for (var _len = arguments.length, rest = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
-        rest[_key - 2] = arguments[_key];
-      }
-
-      console.debug.apply(console, ['DEBUG [' + logger.id + '] ' + message].concat(rest));
+  ConsoleAppender.prototype.debug = function debug(logger, message) {
+    for (var _len = arguments.length, rest = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
+      rest[_key - 2] = arguments[_key];
     }
-  }, {
-    key: 'info',
-    value: function info(logger, message) {
-      for (var _len2 = arguments.length, rest = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        rest[_key2 - 2] = arguments[_key2];
-      }
 
-      console.info.apply(console, ['INFO [' + logger.id + '] ' + message].concat(rest));
-    }
-  }, {
-    key: 'warn',
-    value: function warn(logger, message) {
-      for (var _len3 = arguments.length, rest = Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
-        rest[_key3 - 2] = arguments[_key3];
-      }
+    console.debug.apply(console, ['DEBUG [' + logger.id + '] ' + message].concat(rest));
+  };
 
-      console.warn.apply(console, ['WARN [' + logger.id + '] ' + message].concat(rest));
+  ConsoleAppender.prototype.info = function info(logger, message) {
+    for (var _len2 = arguments.length, rest = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
+      rest[_key2 - 2] = arguments[_key2];
     }
-  }, {
-    key: 'error',
-    value: function error(logger, message) {
-      for (var _len4 = arguments.length, rest = Array(_len4 > 2 ? _len4 - 2 : 0), _key4 = 2; _key4 < _len4; _key4++) {
-        rest[_key4 - 2] = arguments[_key4];
-      }
 
-      console.error.apply(console, ['ERROR [' + logger.id + '] ' + message].concat(rest));
+    console.info.apply(console, ['INFO [' + logger.id + '] ' + message].concat(rest));
+  };
+
+  ConsoleAppender.prototype.warn = function warn(logger, message) {
+    for (var _len3 = arguments.length, rest = Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
+      rest[_key3 - 2] = arguments[_key3];
     }
-  }]);
+
+    console.warn.apply(console, ['WARN [' + logger.id + '] ' + message].concat(rest));
+  };
+
+  ConsoleAppender.prototype.error = function error(logger, message) {
+    for (var _len4 = arguments.length, rest = Array(_len4 > 2 ? _len4 - 2 : 0), _key4 = 2; _key4 < _len4; _key4++) {
+      rest[_key4 - 2] = arguments[_key4];
+    }
+
+    console.error.apply(console, ['ERROR [' + logger.id + '] ' + message].concat(rest));
+  };
 
   return ConsoleAppender;
 })();
