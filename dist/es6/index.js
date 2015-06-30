@@ -28,19 +28,19 @@ if (Function.prototype.bind && window.console && typeof console.log == "object")
 export class ConsoleAppender {
   constructor(){}
 
-  debug(logger, message, ...rest){
+  debug(logger:Object, message:string, ...rest):void{
     console.debug(`DEBUG [${logger.id}] ${message}`, ...rest);
   }
 
-  info(logger, message, ...rest){
+  info(logger:Object, message:string, ...rest):void{
     console.info(`INFO [${logger.id}] ${message}`, ...rest);
   }
 
-  warn(logger, message, ...rest){
+  warn(logger:Object, message:string, ...rest):void{
     console.warn(`WARN [${logger.id}] ${message}`, ...rest);
   }
 
-  error(logger, message, ...rest){
+  error(logger:Object, message:string, ...rest):void{
     console.error(`ERROR [${logger.id}] ${message}`, ...rest);
   }
 }
