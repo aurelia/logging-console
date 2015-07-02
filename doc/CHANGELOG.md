@@ -1,3 +1,11 @@
+## 0.6.0 (2015-07-01)
+
+
+#### Bug Fixes
+
+* **package:** update aurelia tools and dts generator ([579344dd](http://github.com/aurelia/logging-console/commit/579344dd2d6efa8fc0efc0749f61fa06546988ca))
+
+
 ## 0.5.0 (2015-06-08)
 
 
