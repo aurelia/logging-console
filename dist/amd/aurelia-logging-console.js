@@ -29,36 +29,36 @@ define(['exports'], function (exports) {
       _classCallCheck(this, ConsoleAppender);
     }
 
-    ConsoleAppender.prototype.debug = function debug(logger, message) {
-      for (var _len = arguments.length, rest = Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
-        rest[_key - 2] = arguments[_key];
+    ConsoleAppender.prototype.debug = function debug(logger) {
+      for (var _len = arguments.length, rest = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        rest[_key - 1] = arguments[_key];
       }
 
-      console.debug.apply(console, ['DEBUG [' + logger.id + '] ' + message].concat(rest));
+      console.debug.apply(console, ['DEBUG [' + logger.id + ']'].concat(rest));
     };
 
-    ConsoleAppender.prototype.info = function info(logger, message) {
-      for (var _len2 = arguments.length, rest = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        rest[_key2 - 2] = arguments[_key2];
+    ConsoleAppender.prototype.info = function info(logger) {
+      for (var _len2 = arguments.length, rest = Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+        rest[_key2 - 1] = arguments[_key2];
       }
 
-      console.info.apply(console, ['INFO [' + logger.id + '] ' + message].concat(rest));
+      console.info.apply(console, ['INFO [' + logger.id + ']'].concat(rest));
     };
 
-    ConsoleAppender.prototype.warn = function warn(logger, message) {
-      for (var _len3 = arguments.length, rest = Array(_len3 > 2 ? _len3 - 2 : 0), _key3 = 2; _key3 < _len3; _key3++) {
-        rest[_key3 - 2] = arguments[_key3];
+    ConsoleAppender.prototype.warn = function warn(logger) {
+      for (var _len3 = arguments.length, rest = Array(_len3 > 1 ? _len3 - 1 : 0), _key3 = 1; _key3 < _len3; _key3++) {
+        rest[_key3 - 1] = arguments[_key3];
       }
 
-      console.warn.apply(console, ['WARN [' + logger.id + '] ' + message].concat(rest));
+      console.warn.apply(console, ['WARN [' + logger.id + ']'].concat(rest));
     };
 
-    ConsoleAppender.prototype.error = function error(logger, message) {
-      for (var _len4 = arguments.length, rest = Array(_len4 > 2 ? _len4 - 2 : 0), _key4 = 2; _key4 < _len4; _key4++) {
-        rest[_key4 - 2] = arguments[_key4];
+    ConsoleAppender.prototype.error = function error(logger) {
+      for (var _len4 = arguments.length, rest = Array(_len4 > 1 ? _len4 - 1 : 0), _key4 = 1; _key4 < _len4; _key4++) {
+        rest[_key4 - 1] = arguments[_key4];
       }
 
-      console.error.apply(console, ['ERROR [' + logger.id + '] ' + message].concat(rest));
+      console.error.apply(console, ['ERROR [' + logger.id + ']'].concat(rest));
     };
 
     return ConsoleAppender;
