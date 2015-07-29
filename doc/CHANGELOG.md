@@ -1,3 +1,11 @@
+### 0.6.1 (2015-07-29)
+
+
+#### Bug Fixes
+
+* **ConsoleAppender:** don't assume the first log argument is a string ([71d7b31c](http://github.com/aurelia/logging-console/commit/71d7b31c3fb1d337ba7fa0a37fcb46a5bd40d1d7))
+
+
 ## 0.6.0 (2015-07-01)
 
 
