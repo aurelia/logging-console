@@ -1,7 +1,7 @@
 import {ConsoleAppender} from '../src/index';
 
 describe('console appender', () => {
-  it('should have some tests', () => {
+  it('can be instantiated', () => {
     var appender = new ConsoleAppender();
     expect(appender).not.toBe(null);
   });

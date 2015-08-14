@@ -1,3 +1,5 @@
+import {Logger} from 'aurelia-logging';
+
 // Console-polyfill. MIT license.
 // https://github.com/paulmillr/console-polyfill
 // Make it safe to do console.log() always.
@@ -26,19 +28,19 @@ if (Function.prototype.bind && window.console && typeof console.log == "object")
 }
 
 export class ConsoleAppender {
-  debug(logger:Object, ...rest):void {
+  debug(logger : Logger, ...rest : any[]) : void {
     console.debug(`DEBUG [${logger.id}]`, ...rest);
   }
 
-  info(logger:Object, ...rest):void {
+  info(logger : Logger, ...rest : any[]) : void {
     console.info(`INFO [${logger.id}]`, ...rest);
   }
 
-  warn(logger:Object, ...rest):void {
+  warn(logger : Logger, ...rest : any[]) : void {
     console.warn(`WARN [${logger.id}]`, ...rest);
   }
 
-  error(logger:Object, ...rest):void {
+  error(logger : Logger, ...rest : any[]) : void {
     console.error(`ERROR [${logger.id}]`, ...rest);
   }
 }
