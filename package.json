@@ -1,6 +1,6 @@
 {
   "name": "aurelia-logging-console",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "A console log appender for the Aurelia logging library.",
   "keywords": [
     "aurelia",
@@ -24,7 +24,7 @@
       "lib": "dist/amd"
     },
     "dependencies": {
-      "aurelia-logging": "github:aurelia/logging@^0.6.2"
+      "aurelia-logging": "github:aurelia/logging@^0.6.3"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.1.13",

@@ -1,4 +1,4 @@
-define(['exports'], function (exports) {
+define(['exports', 'aurelia-logging'], function (exports, _aureliaLogging) {
   'use strict';
 
   exports.__esModule = true;
@@ -18,8 +18,8 @@ define(['exports'], function (exports) {
     while (method = methods.pop()) if (!con[method]) con[method] = dummy;
   })(typeof window === 'undefined' ? undefined : window);
 
-  if (Function.prototype.bind && window.console && typeof console.log == 'object') {
-    ['log', 'info', 'warn', 'error', 'assert', 'dir', 'clear', 'profile', 'profileEnd'].forEach(function (method) {
+  if (Function.prototype.bind && window.console && typeof console.log == "object") {
+    ["log", "info", "warn", "error", "assert", "dir", "clear", "profile", "profileEnd"].forEach(function (method) {
       console[method] = this.bind(console[method], console);
     }, Function.prototype.call);
   }

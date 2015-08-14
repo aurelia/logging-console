@@ -1,3 +1,11 @@
+### 0.6.2 (2015-08-14)
+
+
+#### Bug Fixes
+
+* **index:** improve type info ([9e724223](http://github.com/aurelia/logging-console/commit/9e724223b6c4125e03651444be804d017af6dcf3))
+
+
 ### 0.6.1 (2015-07-29)
 
 
