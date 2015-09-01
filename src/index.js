@@ -24,20 +24,47 @@ if (Function.prototype.bind && window.console && typeof console.log === 'object'
   }, Function.prototype.call);
 }
 
+/*
+ * An implementation of the Appender interface.
+ */
 export class ConsoleAppender {
-  debug(logger : Logger, ...rest : any[]) : void {
+  /**
+  * Appends a debug log.
+  *
+  * @param logger The source logger.
+  * @param rest The data to log.
+  */
+  debug(logger: Logger, ...rest : any[]): void {
     console.debug(`DEBUG [${logger.id}]`, ...rest);
   }
 
-  info(logger : Logger, ...rest : any[]) : void {
+  /**
+  * Appends an info log.
+  *
+  * @param logger The source logger.
+  * @param rest The data to log.
+  */
+  info(logger: Logger, ...rest : any[]): void {
     console.info(`INFO [${logger.id}]`, ...rest);
   }
 
-  warn(logger : Logger, ...rest : any[]) : void {
+  /**
+  * Appends a warning log.
+  *
+  * @param logger The source logger.
+  * @param rest The data to log.
+  */
+  warn(logger: Logger, ...rest : any[]): void {
     console.warn(`WARN [${logger.id}]`, ...rest);
   }
 
-  error(logger : Logger, ...rest : any[]) : void {
+  /**
+  * Appends an error log.
+  *
+  * @param logger The source logger.
+  * @param rest The data to log.
+  */
+  error(logger: Logger, ...rest : any[]): void {
     console.error(`ERROR [${logger.id}]`, ...rest);
   }
 }
