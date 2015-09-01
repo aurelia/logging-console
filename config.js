@@ -1,21 +1,19 @@
 System.config({
-  "transpiler": "babel",
-  "babelOptions": {
+  defaultJSExtensions: true,
+  transpiler: "babel",
+  babelOptions: {
     "optional": [
       "runtime"
     ]
   },
-  "paths": {
-    "*": "*.js",
-    "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js"
-  }
-});
+  paths: {
+    "github:*": "jspm_packages/github/*",
+    "npm:*": "jspm_packages/npm/*"
+  },
 
-System.config({
-  "map": {
-    "aurelia-logging": "github:aurelia/logging@0.6.3",
-    "babel": "npm:babel-core@5.8.22",
+  map: {
+    "aurelia-logging": "github:aurelia/logging@0.6.4",
+    "babel": "npm:babel-core@5.8.23",
     "babel-runtime": "npm:babel-runtime@5.8.20",
     "core-js": "npm:core-js@0.9.18",
     "github:jspm/nodelibs-process@0.1.1": {
@@ -31,4 +29,3 @@ System.config({
     }
   }
 });
-
