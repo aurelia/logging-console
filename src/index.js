@@ -1,17 +1,14 @@
 import {Logger} from 'aurelia-logging';
 
-// Console-polyfill. MIT license.
-// https://github.com/paulmillr/console-polyfill
-// Make it safe to do console.log() always.
 (function(global) {
-  'use strict';
   global.console = global.console || {};
-  var con = global.console;
-  var prop, method;
-  var empty = {};
-  var dummy = function() {};
-  var properties = 'memory'.split(',');
-  var methods = ('assert,clear,count,debug,dir,dirxml,error,exception,group,' +
+  let con = global.console;
+  let prop;
+  let method;
+  let empty = {};
+  let dummy = function() {};
+  let properties = 'memory'.split(',');
+  let methods = ('assert,clear,count,debug,dir,dirxml,error,exception,group,' +
      'groupCollapsed,groupEnd,info,log,markTimeline,profile,profiles,profileEnd,' +
      'show,table,time,timeEnd,timeline,timelineEnd,timeStamp,trace,warn').split(',');
   while (prop = properties.pop()) if (!con[prop]) con[prop] = empty;
@@ -21,8 +18,8 @@ import {Logger} from 'aurelia-logging';
 // targeted script loaders such as Browserify or Webpack where the only way to
 // get to the global object is via `window`.
 
-if (Function.prototype.bind && window.console && typeof console.log == "object"){
-  ["log","info","warn","error","assert","dir","clear","profile","profileEnd"].forEach(function (method) {
+if (Function.prototype.bind && window.console && typeof console.log === 'object') {
+  ['log', 'info', 'warn', 'error', 'assert', 'dir', 'clear', 'profile', 'profileEnd'].forEach(function(method) {
     console[method] = this.bind(console[method], console);
   }, Function.prototype.call);
 }

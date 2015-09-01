@@ -39,7 +39,7 @@
                   "type": {
                     "type": "reference",
                     "name": "Logger",
-                    "id": 38,
+                    "id": 26,
                     "moduleName": "\"aurelia-logging\""
                   }
                 },
@@ -90,7 +90,7 @@
                   "type": {
                     "type": "reference",
                     "name": "Logger",
-                    "id": 38,
+                    "id": 26,
                     "moduleName": "\"aurelia-logging\""
                   }
                 },
@@ -141,7 +141,7 @@
                   "type": {
                     "type": "reference",
                     "name": "Logger",
-                    "id": 38,
+                    "id": 26,
                     "moduleName": "\"aurelia-logging\""
                   }
                 },
@@ -192,7 +192,7 @@
                   "type": {
                     "type": "reference",
                     "name": "Logger",
-                    "id": 38,
+                    "id": 26,
                     "moduleName": "\"aurelia-logging\""
                   }
                 },
