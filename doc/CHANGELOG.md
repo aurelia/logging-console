@@ -1,3 +1,11 @@
+### 0.7.1 (2015-09-04)
+
+
+#### Bug Fixes
+
+* **bower:** update the dependency version numbers ([4c4a4714](http://github.com/aurelia/logging-console/commit/4c4a471411ebba37ac5e1c23fc14bdeaaf8cdccc))
+
+
 ## 0.7.0 (2015-09-04)
 
 
