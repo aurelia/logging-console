@@ -29,6 +29,9 @@
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
+              "comment": {
+                "shortText": "Appends a debug log."
+              },
               "parameters": [
                 {
                   "id": 6,
@@ -36,10 +39,13 @@
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
+                  "comment": {
+                    "text": "The source logger."
+                  },
                   "type": {
                     "type": "reference",
                     "name": "Logger",
-                    "id": 26,
+                    "id": 38,
                     "moduleName": "\"aurelia-logging\""
                   }
                 },
@@ -50,6 +56,9 @@
                   "kindString": "Parameter",
                   "flags": {
                     "isRest": true
+                  },
+                  "comment": {
+                    "text": "The data to log.\n"
                   },
                   "type": {
                     "type": "instrinct",
@@ -80,6 +89,9 @@
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
+              "comment": {
+                "shortText": "Appends an error log."
+              },
               "parameters": [
                 {
                   "id": 18,
@@ -87,10 +99,13 @@
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
+                  "comment": {
+                    "text": "The source logger."
+                  },
                   "type": {
                     "type": "reference",
                     "name": "Logger",
-                    "id": 26,
+                    "id": 38,
                     "moduleName": "\"aurelia-logging\""
                   }
                 },
@@ -101,6 +116,9 @@
                   "kindString": "Parameter",
                   "flags": {
                     "isRest": true
+                  },
+                  "comment": {
+                    "text": "The data to log.\n"
                   },
                   "type": {
                     "type": "instrinct",
@@ -131,6 +149,9 @@
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
+              "comment": {
+                "shortText": "Appends an info log."
+              },
               "parameters": [
                 {
                   "id": 10,
@@ -138,10 +159,13 @@
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
+                  "comment": {
+                    "text": "The source logger."
+                  },
                   "type": {
                     "type": "reference",
                     "name": "Logger",
-                    "id": 26,
+                    "id": 38,
                     "moduleName": "\"aurelia-logging\""
                   }
                 },
@@ -152,6 +176,9 @@
                   "kindString": "Parameter",
                   "flags": {
                     "isRest": true
+                  },
+                  "comment": {
+                    "text": "The data to log.\n"
                   },
                   "type": {
                     "type": "instrinct",
@@ -182,6 +209,9 @@
               "kind": 4096,
               "kindString": "Call signature",
               "flags": {},
+              "comment": {
+                "shortText": "Appends a warning log."
+              },
               "parameters": [
                 {
                   "id": 14,
@@ -189,10 +219,13 @@
                   "kind": 32768,
                   "kindString": "Parameter",
                   "flags": {},
+                  "comment": {
+                    "text": "The source logger."
+                  },
                   "type": {
                     "type": "reference",
                     "name": "Logger",
-                    "id": 26,
+                    "id": 38,
                     "moduleName": "\"aurelia-logging\""
                   }
                 },
@@ -203,6 +236,9 @@
                   "kindString": "Parameter",
                   "flags": {
                     "isRest": true
+                  },
+                  "comment": {
+                    "text": "The data to log.\n"
                   },
                   "type": {
                     "type": "instrinct",

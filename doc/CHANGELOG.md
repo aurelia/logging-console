@@ -1,3 +1,16 @@
+## 0.7.0 (2015-09-04)
+
+
+#### Bug Fixes
+
+* **build:** update linting, testing and tools ([ef2533d1](http://github.com/aurelia/logging-console/commit/ef2533d1cf14a6fb9f4e928725178442492a2c41))
+
+
+#### Features
+
+* **docs:** generate api.json from .d.ts file ([8700d7cc](http://github.com/aurelia/logging-console/commit/8700d7ccd002e0e7a310b792b7c0a32b65df0f9a))
+
+
 ### 0.6.2 (2015-08-14)
 
 

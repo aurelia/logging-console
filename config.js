@@ -12,7 +12,7 @@ System.config({
   },
 
   map: {
-    "aurelia-logging": "github:aurelia/logging@0.6.4",
+    "aurelia-logging": "github:aurelia/logging@0.7.0",
     "babel": "npm:babel-core@5.8.23",
     "babel-runtime": "npm:babel-runtime@5.8.20",
     "core-js": "npm:core-js@0.9.18",

@@ -7,10 +7,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 var _aureliaLogging = require('aurelia-logging');
 
 (function (global) {
-  'use strict';
   global.console = global.console || {};
   var con = global.console;
-  var prop, method;
+  var prop = undefined;
+  var method = undefined;
   var empty = {};
   var dummy = function dummy() {};
   var properties = 'memory'.split(',');
@@ -19,8 +19,8 @@ var _aureliaLogging = require('aurelia-logging');
   while (method = methods.pop()) if (!con[method]) con[method] = dummy;
 })(typeof window === 'undefined' ? undefined : window);
 
-if (Function.prototype.bind && window.console && typeof console.log == "object") {
-  ["log", "info", "warn", "error", "assert", "dir", "clear", "profile", "profileEnd"].forEach(function (method) {
+if (Function.prototype.bind && window.console && typeof console.log === 'object') {
+  ['log', 'info', 'warn', 'error', 'assert', 'dir', 'clear', 'profile', 'profileEnd'].forEach(function (method) {
     console[method] = this.bind(console[method], console);
   }, Function.prototype.call);
 }
