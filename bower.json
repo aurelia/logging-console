@@ -16,6 +16,6 @@
     "url": "http://github.com/aurelia/logging-console"
   },
   "dependencies": {
-    "aurelia-logging": "^0.6.3"
+    "aurelia-logging": "^0.7.0"
   }
 }
