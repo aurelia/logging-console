@@ -1,6 +1,6 @@
 {
   "name": "aurelia-logging-console",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "description": "A console log appender for the Aurelia logging library.",
   "keywords": [
     "aurelia",
@@ -16,6 +16,7 @@
     "url": "http://github.com/aurelia/logging-console"
   },
   "dependencies": {
-    "aurelia-logging": "^0.7.0"
+    "aurelia-logging": "^0.8.0",
+    "aurelia-pal": "^0.2.0"
   }
 }

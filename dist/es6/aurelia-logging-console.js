@@ -1,3 +1,4 @@
+import {PLATFORM} from 'aurelia-pal';
 import {Logger} from 'aurelia-logging';
 
 (function(global) {
@@ -13,12 +14,9 @@ import {Logger} from 'aurelia-logging';
      'show,table,time,timeEnd,timeline,timelineEnd,timeStamp,trace,warn').split(',');
   while (prop = properties.pop()) if (!con[prop]) con[prop] = empty;
   while (method = methods.pop()) if (!con[method]) con[method] = dummy;
-})(typeof window === 'undefined' ? this : window);
-// Using `this` for web workers while maintaining compatibility with browser
-// targeted script loaders such as Browserify or Webpack where the only way to
-// get to the global object is via `window`.
+})(PLATFORM.global);
 
-if (Function.prototype.bind && window.console && typeof console.log === 'object') {
+if (PLATFORM.global.console && typeof console.log === 'object') {
   ['log', 'info', 'warn', 'error', 'assert', 'dir', 'clear', 'profile', 'profileEnd'].forEach(function(method) {
     console[method] = this.bind(console[method], console);
   }, Function.prototype.call);

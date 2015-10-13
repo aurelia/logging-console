@@ -1,12 +1,14 @@
-System.register(['aurelia-logging'], function (_export) {
+System.register(['aurelia-pal', 'aurelia-logging'], function (_export) {
   'use strict';
 
-  var Logger, ConsoleAppender;
+  var PLATFORM, Logger, ConsoleAppender;
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
   return {
-    setters: [function (_aureliaLogging) {
+    setters: [function (_aureliaPal) {
+      PLATFORM = _aureliaPal.PLATFORM;
+    }, function (_aureliaLogging) {
       Logger = _aureliaLogging.Logger;
     }],
     execute: function () {
@@ -22,9 +24,9 @@ System.register(['aurelia-logging'], function (_export) {
         var methods = ('assert,clear,count,debug,dir,dirxml,error,exception,group,' + 'groupCollapsed,groupEnd,info,log,markTimeline,profile,profiles,profileEnd,' + 'show,table,time,timeEnd,timeline,timelineEnd,timeStamp,trace,warn').split(',');
         while (prop = properties.pop()) if (!con[prop]) con[prop] = empty;
         while (method = methods.pop()) if (!con[method]) con[method] = dummy;
-      })(typeof window === 'undefined' ? undefined : window);
+      })(PLATFORM.global);
 
-      if (Function.prototype.bind && window.console && typeof console.log === 'object') {
+      if (PLATFORM.global.console && typeof console.log === 'object') {
         ['log', 'info', 'warn', 'error', 'assert', 'dir', 'clear', 'profile', 'profileEnd'].forEach(function (method) {
           console[method] = this.bind(console[method], console);
         }, Function.prototype.call);

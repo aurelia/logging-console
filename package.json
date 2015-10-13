@@ -1,6 +1,6 @@
 {
   "name": "aurelia-logging-console",
-  "version": "0.7.1",
+  "version": "0.8.0",
   "description": "A console log appender for the Aurelia logging library.",
   "keywords": [
     "aurelia",
@@ -24,8 +24,8 @@
       "lib": "dist/amd"
     },
     "dependencies": {
-      "aurelia-logging": "github:aurelia/logging@^0.7.0",
-      "aurelia-pal": "github:aurelia/pal@^0.1.1"
+      "aurelia-logging": "github:aurelia/logging@^0.8.0",
+      "aurelia-pal": "github:aurelia/pal@^0.2.0"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.1.13",
@@ -61,30 +61,8 @@
     "yargs": "^2.1.1"
   },
   "aurelia": {
-    "usedBy": [
-      "aurelia-bootstrapper"
-    ],
     "documentation": {
-      "links": [
-        {
-          "rel": "license",
-          "mediaType": "text/plain",
-          "title": "The MIT License (MIT)",
-          "href": "LICENSE"
-        },
-        {
-          "rel": "describedby",
-          "mediaType": "application/aurelia-doc+json",
-          "title": "API",
-          "href": "doc/api.json"
-        },
-        {
-          "rel": "version-history",
-          "mediaType": "text/markdown",
-          "title": "Change Log",
-          "href": "doc/CHANGELOG.md"
-        }
-      ]
+      "articles": []
     }
   }
 }
