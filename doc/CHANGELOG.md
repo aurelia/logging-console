@@ -1,3 +1,6 @@
+### 1.0.0-beta.1 (2015-11-15)
+
+
 ## 0.9.0 (2015-11-09)
 
 
@@ -124,4 +127,3 @@
 #### Features
 
 * **build:** update compiler and switch to register module format ([283b4299](http://github.com/aurelia/logging-console/commit/283b42990d85c67d460eddf5a68af5a98bc59037))
-
