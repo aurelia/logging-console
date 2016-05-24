@@ -1,4 +1,3 @@
-import {PLATFORM} from 'aurelia-pal';
 import {Logger} from 'aurelia-logging';
 
 /*
