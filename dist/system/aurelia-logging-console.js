@@ -1,13 +1,11 @@
 'use strict';
 
 System.register(['aurelia-logging'], function (_export, _context) {
+  "use strict";
+
   var Logger, ConsoleAppender;
 
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
+  
 
   return {
     setters: [function (_aureliaLogging) {
@@ -16,7 +14,7 @@ System.register(['aurelia-logging'], function (_export, _context) {
     execute: function () {
       _export('ConsoleAppender', ConsoleAppender = function () {
         function ConsoleAppender() {
-          _classCallCheck(this, ConsoleAppender);
+          
         }
 
         ConsoleAppender.prototype.debug = function debug(logger) {

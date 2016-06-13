@@ -1,15 +1,8 @@
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.ConsoleAppender = undefined;
-
-var _aureliaLogging = require('aurelia-logging');
 
 
+import { Logger } from 'aurelia-logging';
 
-var ConsoleAppender = exports.ConsoleAppender = function () {
+export var ConsoleAppender = function () {
   function ConsoleAppender() {
     
   }

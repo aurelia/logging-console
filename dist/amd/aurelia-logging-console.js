@@ -6,15 +6,11 @@ define(['exports', 'aurelia-logging'], function (exports, _aureliaLogging) {
   });
   exports.ConsoleAppender = undefined;
 
-  function _classCallCheck(instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  }
+  
 
   var ConsoleAppender = exports.ConsoleAppender = function () {
     function ConsoleAppender() {
-      _classCallCheck(this, ConsoleAppender);
+      
     }
 
     ConsoleAppender.prototype.debug = function debug(logger) {
