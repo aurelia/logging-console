@@ -1,0 +1,4 @@
+{
+  "name": "aurelia-logging-console",
+  "main": "dist/aurelia-logging-console.d.ts"
+}
