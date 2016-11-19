@@ -11,7 +11,8 @@ export class ConsoleAppender {
   * @param rest The data to log.
   */
   debug(logger: Logger, ...rest : any[]): void {
-    console.debug(`DEBUG [${logger.id}]`, ...rest);
+    const debug = console.debug || console.log;
+    debug(`DEBUG [${logger.id}]`, ...rest);
   }
 
   /**
