@@ -1,10 +1,9 @@
-define(['exports', 'aurelia-logging'], function (exports, _aureliaLogging) {
-  'use strict';
+define(["exports"], function (exports) {
+  "use strict";
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.ConsoleAppender = undefined;
 
   
 
@@ -20,7 +19,7 @@ define(['exports', 'aurelia-logging'], function (exports, _aureliaLogging) {
         rest[_key - 1] = arguments[_key];
       }
 
-      (_console = console).debug.apply(_console, ['DEBUG [' + logger.id + ']'].concat(rest));
+      (_console = console).debug.apply(_console, ["DEBUG [" + logger.id + "]"].concat(rest));
     };
 
     ConsoleAppender.prototype.info = function info(logger) {
@@ -30,7 +29,7 @@ define(['exports', 'aurelia-logging'], function (exports, _aureliaLogging) {
         rest[_key2 - 1] = arguments[_key2];
       }
 
-      (_console2 = console).info.apply(_console2, ['INFO [' + logger.id + ']'].concat(rest));
+      (_console2 = console).info.apply(_console2, ["INFO [" + logger.id + "]"].concat(rest));
     };
 
     ConsoleAppender.prototype.warn = function warn(logger) {
@@ -40,7 +39,7 @@ define(['exports', 'aurelia-logging'], function (exports, _aureliaLogging) {
         rest[_key3 - 1] = arguments[_key3];
       }
 
-      (_console3 = console).warn.apply(_console3, ['WARN [' + logger.id + ']'].concat(rest));
+      (_console3 = console).warn.apply(_console3, ["WARN [" + logger.id + "]"].concat(rest));
     };
 
     ConsoleAppender.prototype.error = function error(logger) {
@@ -50,7 +49,7 @@ define(['exports', 'aurelia-logging'], function (exports, _aureliaLogging) {
         rest[_key4 - 1] = arguments[_key4];
       }
 
-      (_console4 = console).error.apply(_console4, ['ERROR [' + logger.id + ']'].concat(rest));
+      (_console4 = console).error.apply(_console4, ["ERROR [" + logger.id + "]"].concat(rest));
     };
 
     return ConsoleAppender;

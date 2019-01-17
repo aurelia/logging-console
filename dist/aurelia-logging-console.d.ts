@@ -1,6 +1,3 @@
-import {
-  Logger
-} from 'aurelia-logging';
 
 /*
  * An implementation of the Appender interface.
@@ -13,7 +10,7 @@ export declare class ConsoleAppender {
     * @param logger The source logger.
     * @param rest The data to log.
     */
-  debug(logger: Logger, ...rest: any[]): void;
+  debug(logger: { id: string }, ...rest: any[]): void;
   
   /**
     * Appends an info log.
@@ -21,7 +18,7 @@ export declare class ConsoleAppender {
     * @param logger The source logger.
     * @param rest The data to log.
     */
-  info(logger: Logger, ...rest: any[]): void;
+  info(logger: { id: string }, ...rest: any[]): void;
   
   /**
     * Appends a warning log.
@@ -29,7 +26,7 @@ export declare class ConsoleAppender {
     * @param logger The source logger.
     * @param rest The data to log.
     */
-  warn(logger: Logger, ...rest: any[]): void;
+  warn(logger: { id: string }, ...rest: any[]): void;
   
   /**
     * Appends an error log.
@@ -37,5 +34,5 @@ export declare class ConsoleAppender {
     * @param logger The source logger.
     * @param rest The data to log.
     */
-  error(logger: Logger, ...rest: any[]): void;
+  error(logger: { id: string }, ...rest: any[]): void;
 }

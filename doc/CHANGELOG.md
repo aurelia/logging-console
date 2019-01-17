@@ -1,3 +1,13 @@
+<a name="1.1.0"></a>
+# [1.1.0](https://github.com/aurelia/logging-console/compare/1.0.0...1.1.0) (2019-01-17)
+
+
+### Bug Fixes
+
+* Apply ISP to improve code flexibility. ([075234e](https://github.com/aurelia/logging-console/commit/075234e))
+
+
+
 <a name="1.0.0"></a>
 # [1.0.0](https://github.com/aurelia/logging-console/compare/1.0.0-rc.1.0.0...v1.0.0) (2016-07-27)
 
