@@ -1,3 +1,8 @@
+<a name="1.1.1"></a>
+## [1.1.1](https://github.com/aurelia/logging-console/compare/1.1.0...1.1.1) (2019-02-03)
+
+
+
 <a name="1.1.0"></a>
 # [1.1.0](https://github.com/aurelia/logging-console/compare/1.0.0...1.1.0) (2019-01-17)
 

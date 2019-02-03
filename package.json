@@ -1,6 +1,6 @@
 {
   "name": "aurelia-logging-console",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A console log appender for the Aurelia logging library.",
   "keywords": [
     "aurelia",
@@ -29,14 +29,10 @@
   ],
   "jspm": {
     "registry": "npm",
-    "jspmPackage": true,
     "main": "aurelia-logging-console",
     "format": "amd",
     "directories": {
       "dist": "dist/amd"
-    },
-    "peerDependencies": {
-      "aurelia-logging": "^1.0.0"
     },
     "dependencies": {
       "aurelia-logging": "^1.0.0"
@@ -98,5 +94,8 @@
     "documentation": {
       "articles": []
     }
+  },
+  "dependencies": {
+    "jspm": "^0.16.53"
   }
 }
