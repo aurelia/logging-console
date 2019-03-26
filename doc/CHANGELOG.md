@@ -1,3 +1,13 @@
+<a name="1.1.2"></a>
+## [1.1.2](https://github.com/aurelia/logging-console/compare/1.1.0...1.1.2) (2019-03-26)
+
+
+### Bug Fixes
+
+* **all:** change es2015 back to native-modules ([35cb72d](https://github.com/aurelia/logging-console/commit/35cb72d))
+
+
+
 <a name="1.1.1"></a>
 ## [1.1.1](https://github.com/aurelia/logging-console/compare/1.1.0...1.1.1) (2019-02-04)
 
